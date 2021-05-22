@@ -1,33 +1,32 @@
 @import url("/assets/fonts/Poppins/Poppins-ExtraLight.ttf");
-
 @font-face {
-  font-family: "Berlin-sans";
-  src: url("/assets/fonts/Berlin\ Sans\ FB\ Regular/berlin-sans.ttf");
+    font-family: "Berlin-sans";
+    src: url("/assets/fonts/Berlin\ Sans\ FB\ Regular/berlin-sans.ttf");
 }
 
 @font-face {
-  font-family: "Autography";
-  src: url("/assets/fonts/autography/Autography.otf");
+    font-family: "Autography";
+    src: url("/assets/fonts/autography/Autography.otf");
 }
 
 :root {
-  --red: #f60707;
-  --white: #ffffff;
+    --red: #f60707;
+    --white: #ffffff;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  color: #444444;
+    font-family: "Poppins", sans-serif;
+    color: #444444;
 }
 
 a {
-  color: #428bca;
-  text-decoration: none;
+    color: #428bca;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #6aa3d5;
-  text-decoration: none;
+    color: #6aa3d5;
+    text-decoration: none;
 }
 
 h1,
@@ -36,344 +35,368 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
 
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+
 .back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-  background: #428bca;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: #428bca;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
 }
 
 .back-to-top i {
-  font-size: 24px;
-  color: #fff;
-  line-height: 0;
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #629fd3;
-  color: #fff;
+    background: #629fd3;
+    color: #fff;
 }
 
 .back-to-top.active {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 #header {
-  transition: all 0.5s;
-  z-index: 997;
-  padding: 15px 0;
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
+
+
 /* 
 #header.header-scrolled,
 #header.header-inner-pages { */
+
+
 /* background: rgba(23, 26, 29, 0.9); */
+
+
 /* } */
 
 #header .logo {
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
 }
 
 #header .logo a {
-  color: #fff;
+    color: #fff;
 }
 
 #header .logo img {
-  max-height: 40px;
+    max-height: 40px;
 }
 
 @media (max-width: 992px) {
-  #header {
-    border: 0;
-  }
+    #header {
+        border: 0;
+    }
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
+
 /**
 * Desktop Navigation 
 */
+
 .navbar {
-  padding: 0;
+    padding: 0;
 }
 
 .navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
 }
 
 .navbar li {
-  position: relative;
+    position: relative;
 }
 
 .navbar a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 300;
-  color: #fff;
-  white-space: nowrap;
-  transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.3s;
 }
 
 .navbar .active,
 .navbar a:hover,
-.navbar li:hover > a {
-  color: var(--red);
+.navbar li:hover>a {
+    color: var(--red);
 }
 
-p > .red_dot {
-  font-size: 50px;
-  color: var(--red);
+p>.red_dot {
+    font-size: 50px;
+    color: var(--red);
 }
+
 
 /**
 * Mobile Navigation 
 */
+
 .mobile-nav-toggle {
-  color: #fff;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+    color: #fff;
 }
 
 @media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-  .navbar ul {
-    display: none;
-  }
+    .mobile-nav-toggle {
+        display: block;
+    }
+    .navbar ul {
+        display: none;
+    }
 }
 
 .navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(34, 39, 43, 0.9);
-  transition: 0.3s;
-  z-index: 999;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(34, 39, 43, 0.9);
+    transition: 0.3s;
+    z-index: 999;
 }
 
 .navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
 .navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 10px;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
 }
 
 .navbar-mobile a {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #394047;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #394047;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
-  color: var(--red);
+.navbar-mobile li:hover>a {
+    color: var(--red);
 }
+
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 #hero {
-  width: 100%;
-  height: 100vh;
-  /* background-color: rgba(34, 39, 43, 0.8); */
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(34, 39, 43, 0.8); */
+    overflow: hidden;
+    position: relative;
 }
 
 #hero .carousel,
 #hero .carousel-inner,
 #hero .carousel-item,
 #hero .carousel-item::before {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 #hero .carousel-item::before {
-  content: "";
-  /* background-color: rgba(12, 13, 14, 0.8); */
+    content: "";
+    /* background-color: rgba(12, 13, 14, 0.8); */
 }
 
 #hero .carousel-container {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  top: 10vh;
-  left: 10vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 10vh;
+    left: 10vw;
 }
+
 #hero .right-text {
-  left: 50vw !important;
-  /* right: 10vw !important; */
+    left: 50vw !important;
+    /* right: 10vw !important; */
 }
+
 #hero .center-text {
-  justify-content: center;
-  left: 33vw;
-  top: 70vh;
-  margin: auto;
+    justify-content: center;
+    left: 33vw;
+    top: 70vh;
+    margin: auto;
 }
+
+
 /* #hero .container {
   text-align: center;
 } */
 
 #hero h2 {
-  color: #fff;
-  margin-bottom: 20px;
-  font-size: 90px;
-  font-weight: 700;
-  text-align: left;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 90px;
+    font-weight: 700;
+    text-align: left;
 }
 
-#hero .nexbuy > h2 {
-  font-family: "Berlin-sans";
+#hero .nexbuy>h2 {
+    font-family: "Berlin-sans";
 }
 
 #hero p {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
-  color: #fff;
-  text-align: left;
-  font-weight: 400;
-  font-size: 20px;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 #hero .nexbuy {
-  font-family: "Berlin-sans";
+    font-family: "Berlin-sans";
 }
+
 .autography {
-  font-family: "Autography";
+    font-family: "Autography";
 }
 
 #hero .carousel-inner .carousel-item {
-  transition-property: opacity;
+    transition-property: opacity;
 }
 
 #hero .carousel-inner .carousel-item,
 #hero .carousel-inner .active.carousel-item-start,
 #hero .carousel-inner .active.carousel-item-end {
-  opacity: 0;
+    opacity: 0;
 }
 
 #hero .carousel-inner .active,
 #hero .carousel-inner .carousel-item-next.carousel-item-start,
 #hero .carousel-inner .carousel-item-prev.carousel-item-end {
-  opacity: 1;
-  transition: 0.5s;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
-  background: none;
-  font-size: 30px;
-  line-height: 0;
-  width: auto;
-  height: auto;
-  /* background: rgba(255, 255, 255, 0.2); */
-  border-radius: 50px;
-  transition: 0.3s;
-  color: rgb(255, 255, 255);
-  width: 54px;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    /* background: rgba(255, 255, 255, 0.2); */
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-  background: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 #hero .carousel-indicators li {
-  cursor: pointer;
-  background: #fff;
-  overflow: hidden;
-  border: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50px;
-  opacity: 0.6;
-  transition: 0.3s;
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
 #hero .carousel-indicators li.active {
-  opacity: 1;
-  background: var(--red);
+    opacity: 1;
+    background: var(--red);
 }
 
 @media (max-width: 768px) {
-  #hero h2 {
-    font-size: 28px;
-  }
+    #hero h2 {
+        font-size: 28px;
+    }
 }
 
 @media (max-height: 500px) {
-  #hero {
-    height: 120vh;
-  }
+    #hero {
+        height: 120vh;
+    }
 }
 
 
@@ -381,86 +404,88 @@ p > .red_dot {
 # Team Section
 --------------------------------------------------------------*/
 
-#team{
-  background-image: url('../assets/images/teambackground.png');
-  margin: 50px;
+#team {
+    background-image: url('../assets/images/teambackground.png');
+    margin: 50px;
 }
 
 #team .pics {
-  position: relative;
-  text-align: center;
+    position: relative;
+    text-align: center;
 }
 
 #team .bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 35px;
+    position: absolute;
+    bottom: 8px;
+    right: 35px;
 }
 
 #team .bottom-right2 {
-  position: absolute;
-  bottom: 8px;
-  right: 70px;
+    position: absolute;
+    bottom: 8px;
+    right: 70px;
 }
 
-#team .redarrow{
-  width: 30px;
+#team .redarrow {
+    width: 30px;
 }
 
-#team h1{
-  font-size: 14px;
-  font-weight: bolder;
+#team h1 {
+    font-size: 14px;
+    font-weight: bolder;
 }
 
-#team h5{
-  color: red;
-  font-size: 11px;
+#team h5 {
+    color: red;
+    font-size: 11px;
 }
 
 #team .mt-5 {
-  margin-top: 70px !important;
+    margin-top: 70px !important;
 }
 
-#team .ellipse{
-  width: 170px;
+#team .ellipse {
+    width: 170px;
 }
 
-#team .twoside{
-  padding-left: 70px;
-  margin-bottom: 20px;
+#team .twoside {
+    padding-left: 70px;
+    margin-bottom: 20px;
 }
 
-#team .container1{
-  margin-bottom: 35px;
+#team .container1 {
+    margin-bottom: 35px;
 }
 
-#team .instagram{
-  width: 13.5px;
+#team .instagram {
+    width: 13.5px;
 }
 
-#team .linkedin{
-  color: rgb(165, 165, 165);
-  font-size: 12px;
-  font-weight: bolder;
+#team .linkedin {
+    color: rgb(165, 165, 165);
+    font-size: 12px;
+    font-weight: bolder;
 }
 
-#team .foundingtext{
-  font-size: 20.5px;
-  font-weight: bolder;
-  color: black;
-  margin-left: 5px;
+#team .foundingtext {
+    font-size: 30.5px;
+    font-weight: bolder;
+    color: black;
+    margin-left: 5px;
 }
 
-#team .greyrect{
-  width: 3px;
-  height:70px;
-  padding-top: 20px;
-  margin-right: 3.5px;
+#team .greyrect {
+    width: 3px;
+    height: 70px;
+    padding-top: 20px;
+    margin-right: 3.5px;
 }
-#team .redrect{
-  height: 68px;
-  margin-right: 3.5px;
+
+#team .redrect {
+    height: 68px;
+    margin-right: 3.5px;
 }
+
 
 /* @media only screen and (min-width: 768px) {
   #team .ellipse{
@@ -483,351 +508,541 @@ p > .red_dot {
 
 
 /* ==============================SERVICE PAGE======================================= */
-#service{
-  background-image: url('../assets/images/teambackground.png');
-  margin: 70px;
+
+#service {
+    background-image: url('../assets/images/teambackground.png');
+    margin: 70px;
 }
 
-#service .card-img-top{
-  width: 50px;
+#service .card-img-top {
+    width: 50px;
 }
 
-#service .card{
-  border: 4px solid red;
-  border-radius: 20px;
-  height: 15rem;
-  margin-top: 10px;
+#service .card {
+    border: 4px solid red;
+    border-radius: 20px;
+    height: 15rem;
+    margin-top: 10px;
 }
 
-#service h5{
-  font-size: 17px;
-  font-weight: bolder;
-
+#service h5 {
+    font-size: 17px;
+    font-weight: bolder;
 }
 
-#service p{
-  font-size: 17px;
+#service p {
+    font-size: 17px;
 }
 
-#service a{
-  color: red;
+#service a {
+    color: red;
 }
 
-#service .greyrect{
-  width: 3px;
-  height:70px;
-  padding-top: 20px;
-  margin-right: 3.5px;
+#service .greyrect {
+    width: 3px;
+    height: 70px;
+    padding-top: 20px;
+    margin-right: 3.5px;
 }
 
-#service .redrect{
-  height: 68px;
-  margin-right: 3.5px;
+#service .redrect {
+    height: 68px;
+    margin-right: 3.5px;
 }
 
-#service .foundingtext{
-  font-size: 20.5px;
-  font-weight: bolder;
-  color: black;
-  margin-left: 5px;
+#service .foundingtext {
+    font-size: 30.5px;
+    font-weight: bolder;
+    color: black;
+    margin-left: 5px;
 }
+
+
 /* ==============================MEDIA SCREENS===================================== */
 
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    #team .ellipse{
-      width: 80px;
-    }
-    #team{
-      padding: 0px !important;
-      margin: 10px;
-    }
-    #team .twoside{
-      padding-left: 5px;
-      padding-right: 20px;
-    }
-    #team h1{
-      font-size: 12.5px;
-      align-items: center;
-      text-align: center;
-    }
-    #team .foundingtext{
-      font-size: 17.5px;
-      font-weight: bolder;
-      color: black;
-    }
-  
-    #team .greyrect{
-      width: 3px;
-      height:70px;
-      padding-top: 20px;
-      margin-right: 3.5px;
-    }
-    #team .redrect{
-      height: 68px;
-      margin-right: 3.5px;
-    }
 
-    #team .redarrow{
-      width: 20px;
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    #team .ellipse {
+        width: 80px;
+    }
+    #team {
+        padding: 0px !important;
+        margin: 10px;
+        background-image: url('../assets/images/teambackground.png');
+    }
+    #team .twoside {
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+    #team h1 {
+        font-size: 12.5px;
+        align-items: center;
+        text-align: center;
+    }
+    #team .foundingtext {
+        font-size: 17.5px;
+        font-weight: bolder;
+        color: black;
+    }
+    #team .greyrect {
+        width: 3px;
+        height: 70px;
+        padding-top: 20px;
+        margin-right: 3.5px;
+    }
+    #team .redrect {
+        height: 68px;
+        margin-right: 3.5px;
+    }
+    #team .redarrow {
+        width: 20px;
     }
     #team .bottom-right {
-      position: absolute;
-      bottom: 8px;
-      right: 10px;
-      }
-  
-      #team .bottom-right2 {
-      position: absolute;
-      bottom: 8px;
-      right: -1px;
-      }
-
-      #team .names h1{
+        position: absolute;
+        bottom: 8px;
+        right: 10px;
+    }
+    #team .bottom-right2 {
+        position: absolute;
+        bottom: 8px;
+        right: -1px;
+    }
+    #team .names h1 {
         top: 40% !important;
         right: 10% !important;
-      }
-  
-      #team .names h5{
+    }
+    #team .names h5 {
         position: relative !important;
         top: 100% !important;
         left: 30% !important;
-      }
-
+    }
 }
+
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-    #team .ellipse{
-      width: 100px;
-    }
-    #team{
-      padding: 10px;
-    }
-    #team .twoside{
-      padding-left: 5px;
-      padding-right: 20px;
-    }
-    #team h1{
-      font-size: 12.5px;
-      align-items: center;
-      text-align: center;
-    }
-    #team .foundingtext{
-      font-size: 18.5px;
-      font-weight: bolder;
-      color: black;
-    }
-  
-    #team .greyrect{
-      width: 3px;
-      height:70px;
-      padding-top: 20px;
-      margin-right: 3.5px;
-    }
-    #team .redrect{
-      height: 68px;
-      margin-right: 3.5px;
-    }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    #team .ellipse {
+        width: 100px;
+    }
+    #team {
+        padding: 10px;
+        background-image: url('../assets/images/teambackground.png');
+    }
+    #team .twoside {
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+    #team h1 {
+        font-size: 12.5px;
+        align-items: center;
+        text-align: center;
+    }
+    #team .foundingtext {
+        font-size: 18.5px;
+        font-weight: bolder;
+        color: black;
+    }
+    #team .greyrect {
+        width: 3px;
+        height: 70px;
+        padding-top: 20px;
+        margin-right: 3.5px;
+    }
+    #team .redrect {
+        height: 68px;
+        margin-right: 3.5px;
+    }
     #team .bottom-right2 {
-      position: absolute;
-      bottom: 8px;
-      right: -15px;
-      }
-
+        position: absolute;
+        bottom: 8px;
+        right: -15px;
+    }
 }
+
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    #team .bottom-right2 {
-      position: absolute;
-      bottom: 8px;
-      right: 10px;
-      }
 
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    #team .bottom-right2 {
+        position: absolute;
+        bottom: 8px;
+        right: 10px;
+    }
 }
+
 
 /* ----------- iPhone X ----------- */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    #team .ellipse{
-      width: 100px;
-    }
-    #team{
-      padding: 10px;
-    }
-    #team .twoside{
-      padding-left: 5px;
-      padding-right: 20px;
-    }
-    #team h1{
-      font-size: 12.5px;
-      align-items: center;
-      text-align: center;
-    }
-    #team .foundingtext{
-      font-size: 18.5px;
-      font-weight: bolder;
-      color: black;
-    }
-  
-    #team .greyrect{
-      width: 3px;
-      height:70px;
-      padding-top: 20px;
-      margin-right: 3.5px;
-    }
-    #team .redrect{
-      height: 68px;
-      margin-right: 3.5px;
-    }
 
-    #team .names h1{
-      top: 40% !important;
-      right: 10% !important;
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    #team .ellipse {
+        width: 100px;
     }
-
-    #team .names h5{
-      position: relative !important;
-      top: 100% !important;
-      left: 30% !important;
+    #team {
+        padding: 10px;
+        background-image: url('../assets/images/teambackground.png');
+    }
+    #team .twoside {
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+    #team h1 {
+        font-size: 12.5px;
+        align-items: center;
+        text-align: center;
+    }
+    #team .foundingtext {
+        font-size: 18.5px;
+        font-weight: bolder;
+        color: black;
+    }
+    #team .greyrect {
+        width: 3px;
+        height: 70px;
+        padding-top: 20px;
+        margin-right: 3.5px;
+    }
+    #team .redrect {
+        height: 68px;
+        margin-right: 3.5px;
+    }
+    #team .names h1 {
+        top: 40% !important;
+        right: 10% !important;
+    }
+    #team .names h5 {
+        position: relative !important;
+        top: 100% !important;
+        left: 30% !important;
     }
 }
+
 
 /* ----------------------------------LAPTOP----------------------------------------- */
-@media screen 
-and (min-device-width: 500px) 
-and (max-device-width: 1200px) 
-and (-webkit-min-device-pixel-ratio: 1) { 
+
+@media screen and (min-device-width: 500px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
     #team {
-      padding: 70px 50px 0 50px;
-      margin: 0px;
+        padding: 70px 50px 0 50px;
+        margin: 0px;
+        background-image: url('../assets/images/teambackground.png');
     }
-
-    #team .ellipse{
-      width: 100px;
+    #team .ellipse {
+        width: 100px;
     }
-
-
-    #team .twoside{
-      padding-left: 70px;
-      padding-right: 70px;
+    #team .twoside {
+        padding-left: 70px;
+        padding-right: 70px;
     }
     #team .bottom-right {
-      position: absolute;
-      bottom: 8px;
-      right: 10px;
-      }
-  
+        position: absolute;
+        bottom: 8px;
+        right: 10px;
+    }
     #team .bottom-right2 {
-      position: absolute;
-      bottom: 8px;
-      right: -30px;
-      }
-    #team .redarrow{
-      width: 20px;
+        position: absolute;
+        bottom: 8px;
+        right: -30px;
     }
-
+    #team .redarrow {
+        width: 20px;
+    }
     #team .bottom-right {
-      position: absolute;
-      bottom: 8px;
-      right: 30px;
-      }
-  
-      #team .bottom-right2 {
-      position: absolute;
-      bottom: 8px;
-      right: 10px;
-      }
+        position: absolute;
+        bottom: 8px;
+        right: 30px;
+    }
+    #team .bottom-right2 {
+        position: absolute;
+        bottom: 8px;
+        right: 10px;
+    }
 }
-@media screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1200px) 
-and (-webkit-min-device-pixel-ratio: 1) { 
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
     #team {
-      padding: 70px 50px 0 50px;
-      margin: 0px;
+        padding: 70px 50px 0 50px;
+        margin: 0px;
     }
-
-    #team .ellipse{
-      width: 100px;
+    #team .ellipse {
+        width: 100px;
     }
-
-
-    #team .twoside{
-      padding-left: 70px;
-      padding-right: 70px;
+    #team .twoside {
+        padding-left: 70px;
+        padding-right: 70px;
     }
     #team .bottom-right {
-      position: absolute;
-      bottom: 8px;
-      right: 10px;
-      }
-  
+        position: absolute;
+        bottom: 8px;
+        right: 10px;
+    }
     #team .bottom-right2 {
-      position: absolute;
-      bottom: 8px;
-      right: -30px;
-      }
-    #team .redarrow{
-      width: 20px;
+        position: absolute;
+        bottom: 8px;
+        right: -30px;
     }
-
+    #team .redarrow {
+        width: 20px;
+    }
     #team .bottom-right {
-      position: absolute;
-      bottom: 8px;
-      right: 10px;
-      }
-  
-      #team .bottom-right2 {
-      position: absolute;
-      bottom: 8px;
-      right: 10px;
-      }
+        position: absolute;
+        bottom: 8px;
+        right: 10px;
+    }
+    #team .bottom-right2 {
+        position: absolute;
+        bottom: 8px;
+        right: 10px;
+    }
 }
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     #team {
-      padding: 70px 120px 0 120px;
+        padding: 70px 120px 0 120px;
     }
-
-    #team .ellipse{
-      width: 180px;
+    #team .ellipse {
+        width: 180px;
     }
-
-    #team .twoside{
-      padding-left: 100px;
-      padding-right: 100px;
+    #team .twoside {
+        padding-left: 100px;
+        padding-right: 100px;
     }
-
     #team .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 30px;
+        position: absolute;
+        bottom: 8px;
+        right: 30px;
     }
-
     #team .bottom-right2 {
-    position: absolute;
-    bottom: 8px;
-    right: 25px;
+        position: absolute;
+        bottom: 8px;
+        right: 25px;
     }
-
     #service {
-      padding: 70px 120px 0 120px;
+        padding: 70px 120px 0 120px;
+    }
+}
+
+
+/* ================================================================About US Page============================================================================= */
+
+
+/*===== Vertical Timeline =====*/
+
+#cd-timeline .foundingtext {
+    font-size: 30.5px;
+    font-weight: bolder;
+    color: black;
+    margin-left: 70px;
+}
+
+#cd-timeline .greyrect {
+    width: 3px;
+    height: 70px;
+    padding-top: 20px;
+    margin-right: 3.5px;
+}
+
+#cd-timeline .redrect {
+    height: 68px;
+    margin-right: 3.5px;
+}
+
+#conference-timeline {
+    position: relative;
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#conference-timeline .conference-center-line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    background: rgb(184, 184, 184);
+    z-index: -1;
+}
+
+#conference-timeline .conference-timeline-content {
+    padding-top: 67px;
+    padding-bottom: 67px;
+}
+
+.timeline-article {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.timeline-article1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+    max-width: 44%;
+    width: 100%;
+}
+
+.timeline-article .timeline-author {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #242424;
+    text-align: right;
+}
+
+.timeline-article .content-left,
+.timeline-article .content-right {
+    position: relative;
+    width: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
+    padding: 27px 25px;
+}
+
+.timeline-article .content-right ul li {
+    display: inline;
+}
+
+.timeline-article .content-right ul li img {
+    width: 30px;
+}
+
+.timeline-article .content-left1,
+.timeline-article .content-right1 {
+    position: relative;
+    width: auto;
+    background-color: #fff;
+    padding: 100px 100px;
+}
+
+.timeline-article .content-left1 div,
+.timeline-article .content-right1 div {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(184, 184, 184);
+    background-color: #fff;
+}
+
+.timeline-article p {
+    margin: 0 0 0 60px;
+    padding: 0;
+    font-weight: 400;
+    color: #242424;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+}
+
+.timeline-article .content-left-container {
+    float: left;
+}
+
+.timeline-article .content-right-container {
+    float: right;
+}
+
+.timeline-article .content-left:before,
+.timeline-article .content-right:before {
+    position: absolute;
+    top: 20px;
+    font-size: 23px;
+    font-family: "FontAwesome";
+    color: #fff;
+}
+
+.timeline-article .content-left:before {
+    content: "\f0da";
+    right: -8px;
+}
+
+.timeline-article .content-right:before {
+    content: "\f0d9";
+    left: -8px;
+}
+
+.timeline-article .meta-date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    color: #fff;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 100%;
+    background: #fff;
+}
+
+.timeline-article .meta-date .image {
+    display: block;
+    text-align: center;
+    font-weight: 900;
+}
+
+.timeline-article .meta-date .imagetop {
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 20px;
+    width: 60px;
+}
+
+.timeline-article .meta-date .imagetop2 {
+    margin-right: 10px;
+}
+
+.timeline-article .meta-date a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 4px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.timeline-article .meta-date a:hover {
+    color: black;
+    font-size: 12px;
+}
+
+@media (max-width:768px) {
+    .timeline-article .content-left-container .content-left .imagetop,
+    .timeline-article .content-right-container .content-right .imagetop {
+        width: 40px;
+    }
+    .timeline-article .content-left-container .content-left p,
+    .timeline-article .content-right-container .content-right p {
+        font-size: 15.5px;
+        padding: 7.5px;
+    }
+    .timeline-article .content-left-container .content-left h1,
+    .timeline-article .content-right-container .content-right h1 {
+        font-size: 20.5px;
+        font-weight: bolder;
+    }
+    .timeline-article .content-left,
+    .timeline-article .content-right {
+        padding: 0;
+        padding-left: 5px;
+    }
+    .timeline-article p {
+        margin: 0;
+    }
+    .timeline-article .content-right ul li {
+        margin: 0;
+    }
+    .timeline-article .content-right ul li img {
+        width: 14px;
     }
 }
