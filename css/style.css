@@ -569,7 +569,7 @@ p>.red_dot {
         margin: 0px !important;
         padding: 0px !important;
         width: 9rem !important;
-        height: 15rem;
+        height: 14rem;
     }
     #service h5 {
         font-size: 13.5px;
@@ -579,7 +579,9 @@ p>.red_dot {
         font-size: 13.5px;
     }
     #service .stub {
-        display: none;
+        display: relative;
+        bottom: -10%;
+        left: 25%;
     }
 }
 
