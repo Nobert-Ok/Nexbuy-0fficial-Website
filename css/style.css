@@ -893,7 +893,7 @@ p>.red_dot {
 .timeline-article .content-right1 {
     position: relative;
     width: auto;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 100px 100px;
 }
 
