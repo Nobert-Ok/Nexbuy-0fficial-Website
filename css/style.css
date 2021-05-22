@@ -1035,4 +1035,12 @@ p>.red_dot {
     .timeline-article .content-right ul li img {
         width: 14px;
     }
+    #cd-timeline .foundingtext {
+        font-size: 30.5px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    #cd-timeline {
+        padding: 20px;
+    }
 }
