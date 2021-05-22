@@ -536,6 +536,53 @@ p>.red_dot {
     margin-left: 5px;
 }
 
+@media (max-width: 768px) {
+    #service {
+        margin: 10px;
+        margin-top: 40px;
+    }
+    #service .card {
+        margin: 0px !important;
+        padding: 2px !important;
+        width: 9.5rem !important;
+        height: 15rem;
+    }
+    #service h5 {
+        font-size: 13.5px;
+        font-weight: bolder;
+    }
+    #service p {
+        font-size: 13.5px;
+    }
+    #service .card .stub {
+        margin-top: 40px !important;
+        width: 3rem !important;
+    }
+}
+
+@media (max-width: 415px) {
+    #service {
+        margin: 10px;
+        margin-top: 40px;
+    }
+    #service .card {
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 9rem !important;
+        height: 15rem;
+    }
+    #service h5 {
+        font-size: 13.5px;
+        font-weight: bolder;
+    }
+    #service p {
+        font-size: 13.5px;
+    }
+    #service .stub {
+        display: none;
+    }
+}
+
 
 /* ==============================MEDIA SCREENS===================================== */
 
@@ -607,7 +654,7 @@ p>.red_dot {
         width: 100px;
     }
     #team {
-        padding: 10px;
+        padding: 7px;
         background-image: url('../assets/images/teambackground.png');
     }
     #team .twoside {
@@ -620,7 +667,7 @@ p>.red_dot {
         text-align: center;
     }
     #team .foundingtext {
-        font-size: 18.5px;
+        font-size: 22.5px;
         font-weight: bolder;
         color: black;
     }
@@ -649,6 +696,11 @@ p>.red_dot {
         position: absolute;
         bottom: 8px;
         right: 10px;
+    }
+    #team .foundingtext {
+        font-size: 14.5px;
+        font-weight: bolder;
+        color: black;
     }
 }
 
@@ -1011,6 +1063,9 @@ p>.red_dot {
         margin-top: 20px;
     }
     #cd-timeline {
-        padding: 20px;
+        padding: 15px;
+    }
+    #service {
+        padding: 0px;
     }
 }
