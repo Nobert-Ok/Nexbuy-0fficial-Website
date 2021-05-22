@@ -17,6 +17,7 @@
 body {
     font-family: "Poppins", sans-serif;
     color: #444444;
+    background-image: url('../assets/images/teambackground.png');
 }
 
 a {
@@ -405,7 +406,6 @@ p>.red_dot {
 --------------------------------------------------------------*/
 
 #team {
-    background-image: url('../assets/images/teambackground.png');
     margin: 50px;
 }
 
@@ -487,30 +487,9 @@ p>.red_dot {
 }
 
 
-/* @media only screen and (min-width: 768px) {
-  #team .ellipse{
-    width: 140px;
-  }
-  #team{
-    padding: 20px;
-  }
-  #team .twoside{
-    padding-left: 5px;
-    padding-right: 20px;
-  }
-  #team h1{
-    font-size: 12.5px;
-    align-items: center;
-    text-align: center;
-  }
-
-} */
-
-
 /* ==============================SERVICE PAGE======================================= */
 
 #service {
-    background-image: url('../assets/images/teambackground.png');
     margin: 70px;
 }
 
@@ -893,20 +872,11 @@ p>.red_dot {
     width: 100%;
 }
 
-.timeline-article .timeline-author {
-    display: block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #242424;
-    text-align: right;
-}
-
 .timeline-article .content-left,
 .timeline-article .content-right {
     position: relative;
     width: auto;
-    background-color: #fff;
+    /* background-color: #fff; */
     box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
     padding: 27px 25px;
 }
