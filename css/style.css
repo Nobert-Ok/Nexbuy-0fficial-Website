@@ -376,6 +376,7 @@ p > .red_dot {
   }
 }
 
+<<<<<<< HEAD
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -684,4 +685,449 @@ p > .red_dot {
   background: var(--red);
   color: #fff;
   text-decoration: none;
+=======
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+
+#team{
+  background-image: url('../assets/images/teambackground.png');
+  margin: 50px;
+}
+
+#team .pics {
+  position: relative;
+  text-align: center;
+}
+
+#team .bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 35px;
+}
+
+#team .bottom-right2 {
+  position: absolute;
+  bottom: 8px;
+  right: 70px;
+}
+
+#team .redarrow{
+  width: 30px;
+}
+
+#team h1{
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+#team h5{
+  color: red;
+  font-size: 11px;
+}
+
+#team .mt-5 {
+  margin-top: 70px !important;
+}
+
+#team .ellipse{
+  width: 170px;
+}
+
+#team .twoside{
+  padding-left: 70px;
+  margin-bottom: 20px;
+}
+
+#team .container1{
+  margin-bottom: 35px;
+}
+
+#team .instagram{
+  width: 13.5px;
+}
+
+#team .linkedin{
+  color: rgb(165, 165, 165);
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+#team .foundingtext{
+  font-size: 20.5px;
+  font-weight: bolder;
+  color: black;
+  margin-left: 5px;
+}
+
+#team .greyrect{
+  width: 3px;
+  height:70px;
+  padding-top: 20px;
+  margin-right: 3.5px;
+}
+#team .redrect{
+  height: 68px;
+  margin-right: 3.5px;
+}
+
+/* @media only screen and (min-width: 768px) {
+  #team .ellipse{
+    width: 140px;
+  }
+  #team{
+    padding: 20px;
+  }
+  #team .twoside{
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+  #team h1{
+    font-size: 12.5px;
+    align-items: center;
+    text-align: center;
+  }
+
+} */
+
+
+/* ==============================SERVICE PAGE======================================= */
+#service{
+  background-image: url('../assets/images/teambackground.png');
+  margin: 70px;
+}
+
+#service .card-img-top{
+  width: 50px;
+}
+
+#service .card{
+  border: 4px solid red;
+  border-radius: 20px;
+  height: 15rem;
+  margin-top: 10px;
+}
+
+#service h5{
+  font-size: 17px;
+  font-weight: bolder;
+
+}
+
+#service p{
+  font-size: 17px;
+}
+
+#service a{
+  color: red;
+}
+
+#service .greyrect{
+  width: 3px;
+  height:70px;
+  padding-top: 20px;
+  margin-right: 3.5px;
+}
+
+#service .redrect{
+  height: 68px;
+  margin-right: 3.5px;
+}
+
+#service .foundingtext{
+  font-size: 20.5px;
+  font-weight: bolder;
+  color: black;
+  margin-left: 5px;
+}
+/* ==============================MEDIA SCREENS===================================== */
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #team .ellipse{
+      width: 80px;
+    }
+    #team{
+      padding: 0px !important;
+      margin: 10px;
+    }
+    #team .twoside{
+      padding-left: 5px;
+      padding-right: 20px;
+    }
+    #team h1{
+      font-size: 12.5px;
+      align-items: center;
+      text-align: center;
+    }
+    #team .foundingtext{
+      font-size: 17.5px;
+      font-weight: bolder;
+      color: black;
+    }
+  
+    #team .greyrect{
+      width: 3px;
+      height:70px;
+      padding-top: 20px;
+      margin-right: 3.5px;
+    }
+    #team .redrect{
+      height: 68px;
+      margin-right: 3.5px;
+    }
+
+    #team .redarrow{
+      width: 20px;
+    }
+    #team .bottom-right {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      }
+  
+      #team .bottom-right2 {
+      position: absolute;
+      bottom: 8px;
+      right: -15px;
+      }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    #team .ellipse{
+      width: 100px;
+    }
+    #team{
+      padding: 10px;
+    }
+    #team .twoside{
+      padding-left: 5px;
+      padding-right: 20px;
+    }
+    #team h1{
+      font-size: 12.5px;
+      align-items: center;
+      text-align: center;
+    }
+    #team .foundingtext{
+      font-size: 18.5px;
+      font-weight: bolder;
+      color: black;
+    }
+  
+    #team .greyrect{
+      width: 3px;
+      height:70px;
+      padding-top: 20px;
+      margin-right: 3.5px;
+    }
+    #team .redrect{
+      height: 68px;
+      margin-right: 3.5px;
+    }
+
+    #team .bottom-right2 {
+      position: absolute;
+      bottom: 8px;
+      right: -15px;
+      }
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    #team .bottom-right2 {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      }
+
+}
+
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    #team .ellipse{
+      width: 100px;
+    }
+    #team{
+      padding: 10px;
+    }
+    #team .twoside{
+      padding-left: 5px;
+      padding-right: 20px;
+    }
+    #team h1{
+      font-size: 12.5px;
+      align-items: center;
+      text-align: center;
+    }
+    #team .foundingtext{
+      font-size: 18.5px;
+      font-weight: bolder;
+      color: black;
+    }
+  
+    #team .greyrect{
+      width: 3px;
+      height:70px;
+      padding-top: 20px;
+      margin-right: 3.5px;
+    }
+    #team .redrect{
+      height: 68px;
+      margin-right: 3.5px;
+    }
+
+    #team .names h1{
+      top: 40% !important;
+      right: 10% !important;
+    }
+
+    #team .names h5{
+      position: relative !important;
+      top: 100% !important;
+      left: 30% !important;
+    }
+}
+
+/* ----------------------------------LAPTOP----------------------------------------- */
+@media screen 
+and (min-device-width: 500px) 
+and (max-device-width: 1200px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+    #team {
+      padding: 70px 50px 0 50px;
+      margin: 0px;
+    }
+
+    #team .ellipse{
+      width: 100px;
+    }
+
+
+    #team .twoside{
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+    #team .bottom-right {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      }
+  
+    #team .bottom-right2 {
+      position: absolute;
+      bottom: 8px;
+      right: -30px;
+      }
+    #team .redarrow{
+      width: 20px;
+    }
+
+    #team .bottom-right {
+      position: absolute;
+      bottom: 8px;
+      right: 30px;
+      }
+  
+      #team .bottom-right2 {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      }
+}
+@media screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1200px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+    #team {
+      padding: 70px 50px 0 50px;
+      margin: 0px;
+    }
+
+    #team .ellipse{
+      width: 100px;
+    }
+
+
+    #team .twoside{
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+    #team .bottom-right {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      }
+  
+    #team .bottom-right2 {
+      position: absolute;
+      bottom: 8px;
+      right: -30px;
+      }
+    #team .redarrow{
+      width: 20px;
+    }
+
+    #team .bottom-right {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      }
+  
+      #team .bottom-right2 {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      }
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    #team {
+      padding: 70px 120px 0 120px;
+    }
+
+    #team .ellipse{
+      width: 180px;
+    }
+
+    #team .twoside{
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    #team .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 30px;
+    }
+
+    #team .bottom-right2 {
+    position: absolute;
+    bottom: 8px;
+    right: 25px;
+    }
+
+    #service {
+      padding: 70px 120px 0 120px;
+    }
+>>>>>>> 2a35c1fd972e1381dccfd4b662426144a84b5add
 }
