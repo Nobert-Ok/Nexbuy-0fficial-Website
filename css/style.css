@@ -962,16 +962,6 @@ p>.red_dot {
     color: #fff;
 }
 
-.timeline-article .content-left:before {
-    content: "\f0da";
-    right: -8px;
-}
-
-.timeline-article .content-right:before {
-    content: "\f0d9";
-    left: -8px;
-}
-
 .timeline-article .meta-date {
     position: absolute;
     top: 0;
