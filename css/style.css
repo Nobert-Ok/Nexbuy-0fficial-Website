@@ -584,7 +584,18 @@ p > .red_dot {
       #team .bottom-right2 {
       position: absolute;
       bottom: 8px;
-      right: -15px;
+      right: -1px;
+      }
+
+      #team .names h1{
+        top: 40% !important;
+        right: 10% !important;
+      }
+  
+      #team .names h5{
+        position: relative !important;
+        top: 100% !important;
+        left: 30% !important;
       }
 
 }
