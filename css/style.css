@@ -40,6 +40,15 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
@@ -78,13 +87,14 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  /* background: rgba(23, 26, 29, 0.3); */
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
-/* 
-#header.header-scrolled,
-#header.header-inner-pages { */
-/* background: rgba(23, 26, 29, 0.9); */
-/* } */
+
+#header .header-scrolled,
+#header .header-inner-pages {
+  background: rgba(0, 0, 0, 0.005);
+}
 
 #header .logo {
   font-size: 30px;
@@ -148,11 +158,6 @@ h6 {
 .navbar .active,
 .navbar a:hover,
 .navbar li:hover > a {
-  color: var(--red);
-}
-
-p > .red_dot {
-  font-size: 50px;
   color: var(--red);
 }
 
@@ -297,6 +302,10 @@ p > .red_dot {
   text-align: left;
   font-weight: 400;
   font-size: 20px;
+}
+p > .red_dot {
+  font-size: 50px;
+  color: var(--red);
 }
 
 #hero .nexbuy {
@@ -877,6 +886,66 @@ p > .red_dot {
     height: 68px;
     margin-right: 3.5px;
   }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  #team .ellipse {
+    width: 80px;
+  }
+  #team {
+    padding: 0px !important;
+    /* margin: 10px; */
+  }
+  #team .twoside {
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+  #team h1 {
+    font-size: 12.5px;
+    align-items: center;
+    text-align: center;
+  }
+  #team .foundingtext {
+    font-size: 17.5px;
+    font-weight: bolder;
+    color: black;
+  }
+
+  #team .greyrect {
+    width: 3px;
+    height: 70px;
+    padding-top: 20px;
+    margin-right: 3.5px;
+  }
+  #team .redrect {
+    height: 68px;
+    margin-right: 3.5px;
+  }
+
+  #team .redarrow {
+    width: 20px;
+  }
+  #team .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+  }
+
+  #team .bottom-right2 {
+    position: absolute;
+    bottom: 8px;
+    right: -1px;
+  }
+
+  #team .names h1 {
+    top: 40% !important;
+    right: 10% !important;
+  }
+
+  #team .names h5 {
+    position: relative !important;
+    top: 100% !important;
+    left: 30% !important;
+  }
 
   #team .redarrow {
     width: 20px;
@@ -993,7 +1062,7 @@ p > .red_dot {
 /* ----------------------------------LAPTOP----------------------------------------- */
 @media screen and (min-device-width: 500px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
   #team {
-    padding: 70px 50px 0 50px;
+    /* padding: 70px 50px 0 50px; */
     margin: 0px;
   }
 
@@ -1034,7 +1103,7 @@ p > .red_dot {
 }
 @media screen and (min-device-width: 768px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
   #team {
-    padding: 70px 50px 0 50px;
+    /* padding: 70px 50px 0 50px; */
     margin: 0px;
   }
 
@@ -1075,7 +1144,7 @@ p > .red_dot {
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   #team {
-    padding: 70px 120px 0 120px;
+    /* padding: 70px 120px 0 120px; */
   }
 
   #team .ellipse {
@@ -1100,6 +1169,6 @@ p > .red_dot {
   }
 
   #service {
-    padding: 70px 120px 0 120px;
+    /* padding: 70px 120px 0 120px; */
   }
 }
