@@ -1,5 +1,4 @@
 @import url("/assets/fonts/Poppins/Poppins-ExtraLight.ttf");
-
 @font-face {
   font-family: "Berlin-sans";
   src: url("/assets/fonts/Berlin\ Sans\ FB\ Regular/berlin-sans.ttf");
@@ -18,6 +17,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #444444;
+  background-image: url("../assets/images/teambackground.png");
 }
 
 a {
@@ -51,6 +51,7 @@ h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -80,9 +81,11 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 #header {
   transition: all 0.5s;
   z-index: 997;
@@ -123,9 +126,11 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
 /**
 * Desktop Navigation 
 */
+
 .navbar {
   padding: 0;
 }
@@ -164,6 +169,7 @@ h6 {
 /**
 * Mobile Navigation 
 */
+
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -233,6 +239,7 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -268,16 +275,19 @@ h6 {
   top: 10vh;
   left: 10vw;
 }
+
 #hero .right-text {
   left: 50vw !important;
   /* right: 10vw !important; */
 }
+
 #hero .center-text {
   justify-content: center;
   left: 33vw;
   top: 70vh;
   margin: auto;
 }
+
 /* #hero .container {
   text-align: center;
 } */
@@ -311,6 +321,7 @@ p > .red_dot {
 #hero .nexbuy {
   font-family: "Berlin-sans";
 }
+
 .autography {
   font-family: "Autography";
 }
@@ -705,6 +716,7 @@ p > .red_dot {
 #team {
   background-image: url("../assets/images/teambackground.png");
   /* margin: 10px; */
+  /* margin: 50px; */
 }
 
 #team .pics {
@@ -783,29 +795,11 @@ p > .red_dot {
   margin-right: 3.5px;
 }
 
-/* @media only screen and (min-width: 768px) {
-  #team .ellipse{
-    width: 140px;
-  }
-  #team{
-    padding: 20px;
-  }
-  #team .twoside{
-    padding-left: 5px;
-    padding-right: 20px;
-  }
-  #team h1{
-    font-size: 12.5px;
-    align-items: center;
-    text-align: center;
-  }
-
-} */
-
 /* ==============================SERVICE PAGE======================================= */
+
 #service {
-  background-image: url("../assets/images/teambackground.png");
   margin: 70px;
+  background-image: url("../assets/images/teambackground.png");
 }
 
 #service .card-img-top {
@@ -845,14 +839,65 @@ p > .red_dot {
 }
 
 #service .foundingtext {
-  font-size: 20.5px;
+  font-size: 30.5px;
   font-weight: bolder;
   color: black;
   margin-left: 5px;
 }
+
+@media (max-width: 768px) {
+  #service {
+    margin: 10px;
+    margin-top: 40px;
+  }
+  #service .card {
+    margin: 0px !important;
+    padding: 2px !important;
+    width: 9.5rem !important;
+    height: 15rem;
+  }
+  #service h5 {
+    font-size: 13.5px;
+    font-weight: bolder;
+  }
+  #service p {
+    font-size: 13.5px;
+  }
+  #service .card .stub {
+    margin-top: 40px !important;
+    width: 3rem !important;
+  }
+}
+
+@media (max-width: 415px) {
+  #service {
+    margin: 10px;
+    margin-top: 40px;
+  }
+  #service .card {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 9rem !important;
+    height: 14rem;
+  }
+  #service h5 {
+    font-size: 13.5px;
+    font-weight: bolder;
+  }
+  #service p {
+    font-size: 13.5px;
+  }
+  #service .stub {
+    display: relative;
+    bottom: -10%;
+    left: 25%;
+  }
+}
+
 /* ==============================MEDIA SCREENS===================================== */
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   #team .ellipse {
     width: 80px;
@@ -860,6 +905,7 @@ p > .red_dot {
   #team {
     padding: 0px !important;
     margin: 10px;
+    background-image: url("../assets/images/teambackground.png");
   }
   #team .twoside {
     padding-left: 5px;
@@ -875,7 +921,6 @@ p > .red_dot {
     font-weight: bolder;
     color: black;
   }
-
   #team .greyrect {
     width: 3px;
     height: 70px;
@@ -886,41 +931,6 @@ p > .red_dot {
     height: 68px;
     margin-right: 3.5px;
   }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  #team .ellipse {
-    width: 80px;
-  }
-  #team {
-    padding: 0px !important;
-    /* margin: 10px; */
-  }
-  #team .twoside {
-    padding-left: 5px;
-    padding-right: 20px;
-  }
-  #team h1 {
-    font-size: 12.5px;
-    align-items: center;
-    text-align: center;
-  }
-  #team .foundingtext {
-    font-size: 17.5px;
-    font-weight: bolder;
-    color: black;
-  }
-
-  #team .greyrect {
-    width: 3px;
-    height: 70px;
-    padding-top: 20px;
-    margin-right: 3.5px;
-  }
-  #team .redrect {
-    height: 68px;
-    margin-right: 3.5px;
-  }
-
   #team .redarrow {
     width: 20px;
   }
@@ -929,47 +939,31 @@ p > .red_dot {
     bottom: 8px;
     right: 10px;
   }
-
   #team .bottom-right2 {
     position: absolute;
     bottom: 8px;
     right: -1px;
   }
-
   #team .names h1 {
     top: 40% !important;
     right: 10% !important;
   }
-
   #team .names h5 {
     position: relative !important;
     top: 100% !important;
     left: 30% !important;
   }
-
-  #team .redarrow {
-    width: 20px;
-  }
-  #team .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 10px;
-  }
-
-  #team .bottom-right2 {
-    position: absolute;
-    bottom: 8px;
-    right: -15px;
-  }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   #team .ellipse {
     width: 100px;
   }
   #team {
-    padding: 10px;
+    padding: 7px;
+    background-image: url("../assets/images/teambackground.png");
   }
   #team .twoside {
     padding-left: 5px;
@@ -981,11 +975,10 @@ p > .red_dot {
     text-align: center;
   }
   #team .foundingtext {
-    font-size: 18.5px;
+    font-size: 22.5px;
     font-weight: bolder;
     color: black;
   }
-
   #team .greyrect {
     width: 3px;
     height: 70px;
@@ -996,7 +989,6 @@ p > .red_dot {
     height: 68px;
     margin-right: 3.5px;
   }
-
   #team .bottom-right2 {
     position: absolute;
     bottom: 8px;
@@ -1005,21 +997,29 @@ p > .red_dot {
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   #team .bottom-right2 {
     position: absolute;
     bottom: 8px;
     right: 10px;
   }
+  #team .foundingtext {
+    font-size: 14.5px;
+    font-weight: bolder;
+    color: black;
+  }
 }
 
 /* ----------- iPhone X ----------- */
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   #team .ellipse {
     width: 100px;
   }
   #team {
     padding: 10px;
+    background-image: url("../assets/images/teambackground.png");
   }
   #team .twoside {
     padding-left: 5px;
@@ -1035,7 +1035,6 @@ p > .red_dot {
     font-weight: bolder;
     color: black;
   }
-
   #team .greyrect {
     width: 3px;
     height: 70px;
@@ -1046,12 +1045,10 @@ p > .red_dot {
     height: 68px;
     margin-right: 3.5px;
   }
-
   #team .names h1 {
     top: 40% !important;
     right: 10% !important;
   }
-
   #team .names h5 {
     position: relative !important;
     top: 100% !important;
@@ -1060,16 +1057,16 @@ p > .red_dot {
 }
 
 /* ----------------------------------LAPTOP----------------------------------------- */
+
 @media screen and (min-device-width: 500px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
   #team {
-    /* padding: 70px 50px 0 50px; */
+    padding: 70px 50px 0 50px;
     margin: 0px;
+    background-image: url("../assets/images/teambackground.png");
   }
-
   #team .ellipse {
     width: 100px;
   }
-
   #team .twoside {
     padding-left: 70px;
     padding-right: 70px;
@@ -1079,7 +1076,6 @@ p > .red_dot {
     bottom: 8px;
     right: 10px;
   }
-
   #team .bottom-right2 {
     position: absolute;
     bottom: 8px;
@@ -1088,29 +1084,26 @@ p > .red_dot {
   #team .redarrow {
     width: 20px;
   }
-
   #team .bottom-right {
     position: absolute;
     bottom: 8px;
     right: 30px;
   }
-
   #team .bottom-right2 {
     position: absolute;
     bottom: 8px;
     right: 10px;
   }
 }
+
 @media screen and (min-device-width: 768px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
   #team {
-    /* padding: 70px 50px 0 50px; */
+    padding: 70px 50px 0 50px;
     margin: 0px;
   }
-
   #team .ellipse {
     width: 100px;
   }
-
   #team .twoside {
     padding-left: 70px;
     padding-right: 70px;
@@ -1120,7 +1113,6 @@ p > .red_dot {
     bottom: 8px;
     right: 10px;
   }
-
   #team .bottom-right2 {
     position: absolute;
     bottom: 8px;
@@ -1129,46 +1121,254 @@ p > .red_dot {
   #team .redarrow {
     width: 20px;
   }
-
   #team .bottom-right {
     position: absolute;
     bottom: 8px;
     right: 10px;
   }
-
   #team .bottom-right2 {
     position: absolute;
     bottom: 8px;
     right: 10px;
   }
 }
+
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   #team {
-    /* padding: 70px 120px 0 120px; */
+    padding: 70px 120px 0 120px;
   }
-
   #team .ellipse {
     width: 180px;
   }
-
   #team .twoside {
     padding-left: 100px;
     padding-right: 100px;
   }
-
   #team .bottom-right {
     position: absolute;
     bottom: 8px;
     right: 30px;
   }
-
   #team .bottom-right2 {
     position: absolute;
     bottom: 8px;
     right: 25px;
   }
-
   #service {
-    /* padding: 70px 120px 0 120px; */
+    padding: 70px 120px 0 120px;
+  }
+}
+
+/* ================================================================About US Page============================================================================= */
+
+/*===== Vertical Timeline =====*/
+
+#cd-timeline .foundingtext {
+  font-size: 30.5px;
+  font-weight: bolder;
+  color: black;
+  margin-left: 70px;
+}
+
+#cd-timeline .greyrect {
+  width: 3px;
+  height: 70px;
+  padding-top: 20px;
+  margin-right: 3.5px;
+}
+
+#cd-timeline .redrect {
+  height: 68px;
+  margin-right: 3.5px;
+}
+
+#conference-timeline {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  background: rgb(184, 184, 184);
+  z-index: -1;
+}
+
+#conference-timeline .conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.timeline-article1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+  max-width: 44%;
+  width: 100%;
+}
+
+.timeline-article .content-left,
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  /* background-color: #fff; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  padding: 27px 25px;
+}
+
+.timeline-article .content-right ul li {
+  display: inline;
+}
+
+.timeline-article .content-right ul li img {
+  width: 30px;
+}
+
+.timeline-article .content-left1,
+.timeline-article .content-right1 {
+  position: relative;
+  width: auto;
+  /* background-color: #fff; */
+  padding: 100px 100px;
+}
+
+.timeline-article .content-left1 div,
+.timeline-article .content-right1 div {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgb(184, 184, 184);
+  background-color: #fff;
+}
+
+.timeline-article p {
+  margin: 0 0 0 60px;
+  padding: 0;
+  font-weight: 400;
+  color: #242424;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+
+.timeline-article .content-left-container {
+  float: left;
+}
+
+.timeline-article .content-right-container {
+  float: right;
+}
+
+.timeline-article .content-left:before,
+.timeline-article .content-right:before {
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+
+.timeline-article .meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  color: #fff;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 100%;
+  background: #fff;
+}
+
+.timeline-article .meta-date .image {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+
+.timeline-article .meta-date .imagetop {
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 20px;
+  width: 60px;
+}
+
+.timeline-article .meta-date .imagetop2 {
+  margin-right: 10px;
+}
+
+.timeline-article .meta-date a {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 4px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.timeline-article .meta-date a:hover {
+  color: black;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .timeline-article .content-left-container .content-left .imagetop,
+  .timeline-article .content-right-container .content-right .imagetop {
+    width: 40px;
+  }
+  .timeline-article .content-left-container .content-left p,
+  .timeline-article .content-right-container .content-right p {
+    font-size: 15.5px;
+    padding: 7.5px;
+  }
+  .timeline-article .content-left-container .content-left h1,
+  .timeline-article .content-right-container .content-right h1 {
+    font-size: 20.5px;
+    font-weight: bolder;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 0;
+    padding-left: 5px;
+  }
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article .content-right ul li {
+    margin: 0;
+  }
+  .timeline-article .content-right ul li img {
+    width: 14px;
+  }
+  #cd-timeline .foundingtext {
+    font-size: 30.5px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  #cd-timeline {
+    padding: 15px;
+  }
+  #service {
+    padding: 0px;
   }
 }
